@@ -22,7 +22,11 @@ a {
 }
 
 body {
+    width: 100vw;
+    height: 100vh;
     background-color: #112d4e;
+    left: 10vw;
+    position: relative;
 }
 
 .main {
@@ -39,7 +43,7 @@ body {
     height: 50.593vw;
     width: 5.782vw;
     margin-top: 2.168vw;
-    border-radius: 0 1.446vw 1.446vw 0;
+    border-radius: 1.446vw 1.446vw 1.446vw 1.446vw;
 }
 
 .whoround {
