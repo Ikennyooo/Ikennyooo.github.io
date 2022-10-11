@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 li {
@@ -22,18 +24,57 @@ a {
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     background-color: #112d4e;
-    left: 10vw;
-    position: relative;
+}
+
+.float_window {
+    display: none;
+    position: absolute;
+    height: 14.455vw;
+    width: 28.910vw;
+    left: 38%;
+    top: 30%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1.084vw solid #112d4e;
+    border-radius: 1.446vw;
+    background-color: #3f72af;
+    padding-top: 2.530vw;
+    z-index: 1002;
+    overflow: auto;
+    text-align: center;
+    box-shadow: 0.000vw 0.000vw 72.275vw 72.275vw rgba(125, 181, 211, 0.335);
+}
+
+.float_window p {
+    font-size: 3.252vw;
+    font-weight: bold;
+    color: #112d4e;
+}
+
+.float_window button {
+    height: 5.782vw;
+    width: 10.119vw;
+    border-radius: 1.446vw;
+    border: 0.000vw;
+    background-color: #88a4d6;
+    color: #112d4e;
+    font-weight: 800;
+    font-size: 1.662vw;
+    margin-right: 1.446vw;
+    box-shadow: 0.217vw 0.217vw 0.723vw rgb(16, 55, 73);
+}
+
+.fw_op {
+    height: 5.782vw;
+    width: 23.851vw;
+    margin-left: 3.469vw;
+    margin-top: 1.446vw;
 }
 
 .main {
-    display: block;
-    float: left;
     height: 52.761vw;
     width: 67.939vw;
+    margin: 0 auto;
 }
 
 .bar {
@@ -43,7 +84,7 @@ body {
     height: 50.593vw;
     width: 5.782vw;
     margin-top: 2.168vw;
-    border-radius: 1.446vw 1.446vw 1.446vw 1.446vw;
+    border-radius: 1.446vw;
 }
 
 .whoround {
@@ -81,6 +122,10 @@ body {
 .playboard button:active {
     transform: scale(0.95);
     box-shadow: 0.217vw 0.145vw 1.590vw 0.072vw rgba(0, 0, 0, 0.24);
+}
+
+.playboard button:hover {
+    transform: scale(1.05);
 }
 
 .A {
@@ -154,6 +199,7 @@ body {
     height: 2.891vw;
     width: 26.019vw;
     margin-top: 2.168vw;
+    line-height: 2.891vw;
     background-color: #112d4e;
     font-size: 2.530vw;
     padding: 0.867vw;
@@ -208,6 +254,11 @@ body {
     font-size: 2.168vw;
     margin-bottom: 1.446vw;
     box-shadow: 0.217vw 0.217vw 0.723vw rgb(16, 55, 73);
+}
+
+#roll:hover,
+#restart:hover {
+    transform: scale(1.05);
 }
 
 .touzi button:active {
